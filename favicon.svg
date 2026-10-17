@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CDEBFA"/>
+      <stop offset="50%" stop-color="#E6DDF8"/>
+      <stop offset="100%" stop-color="#F8E3EC"/>
+    </linearGradient>
+    <linearGradient id="silverCrown" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#D9E0EB"/>
+      <stop offset="100%" stop-color="#A8B6C8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="20" fill="url(#bgGrad)"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#D9E0EB" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+  <!-- Swan Body -->
+  <path d="M22 46 C28 47 38 46 45 40 C48 37 49 32 46 29 C44 27 41 27 38 29 C34 31 31 34 26 36 C22 38 18 41 22 46 Z" fill="#FAFCFF" filter="drop-shadow(0 2px 4px rgba(52,69,104,0.15))"/>
+  <!-- Swan Neck & Head -->
+  <path d="M24 44 C22 41 20 37 21 32 C22 26 26 21 28 17 C29 15 31 15 32 17 C32.5 18 31 20 30 22 C27 28 27 33 28 36 Z" fill="#FAFCFF"/>
+  <!-- Beak -->
+  <path d="M32 17 L36 18.5 L32 20 Z" fill="#F8C8A9"/>
+  <circle cx="30" cy="17.5" r="1" fill="#344568"/>
+  <!-- Crown / Tiara -->
+  <path d="M28.5 14 L29.5 16 L31 13.5 L32.5 16 L33.5 14 L33 17 L29 17 Z" fill="url(#silverCrown)"/>
+  <!-- Sparkles -->
+  <polygon points="48,16 49.5,20 53.5,21.5 49.5,23 48,27 46.5,23 42.5,21.5 46.5,20" fill="#FFFFFF" opacity="0.9"/>
+  <polygon points="15,22 16,24.5 18.5,25.5 16,26.5 15,29 14,26.5 11.5,25.5 14,24.5" fill="#FFFFFF" opacity="0.8"/>
+</svg>
