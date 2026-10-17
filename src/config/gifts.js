@@ -3,6 +3,10 @@
  * All gift assets, titles, messages, and placeholders can be customized here.
  */
 
+const base = import.meta.env.BASE_URL || './';
+const cleanBase = base.endsWith('/') ? base : base + '/';
+export const getAssetUrl = (path) => `${cleanBase}${path.replace(/^\//, '')}`;
+
 export const GIFT_DEFINITIONS = [
   {
     id: 1,
@@ -13,7 +17,7 @@ export const GIFT_DEFINITIONS = [
     boxIcon: '🦢',
     title: 'A Little Birthday Magic',
     message: 'Every fairytale deserves a beautiful beginning. And today, this little fairytale is all about you!',
-    asset: '/assets/birthday-greeting.jpg',
+    asset: getAssetUrl('assets/birthday-greeting.jpg'),
     alt: 'Odette Swan Princess Birthday Greeting for Elza',
     aspectRatio: '928 / 1152',
     lightboxTitle: 'Birthday Greeting Card',
@@ -29,7 +33,7 @@ export const GIFT_DEFINITIONS = [
     boxIcon: '📱',
     title: 'A Little Piece of Magic',
     message: 'A little winter magic to keep close, even when you leave this page. ✨',
-    asset: '/assets/wallpaper-01.jpg',
+    asset: getAssetUrl('assets/wallpaper-01.jpg'),
     alt: 'Magical Winter Swan Phone Wallpaper 1 for Elza',
     aspectRatio: '714 / 1280',
     lightboxTitle: 'Magical Phone Wallpaper I',
@@ -45,7 +49,7 @@ export const GIFT_DEFINITIONS = [
     boxIcon: '✨',
     title: 'Another Little Dream',
     message: 'Another tiny piece of this fairytale, made to bring a little sparkle to your everyday moments. 🩵',
-    asset: '/assets/wallpaper-02.jpg',
+    asset: getAssetUrl('assets/wallpaper-02.jpg'),
     alt: 'Magical Winter Swan Phone Wallpaper 2 for Elza',
     aspectRatio: '714 / 1280',
     lightboxTitle: 'Magical Phone Wallpaper II',
@@ -61,7 +65,7 @@ export const GIFT_DEFINITIONS = [
     boxIcon: '💌',
     title: 'A Little Note from the Heart',
     message: 'Some gifts are made of pictures and melodies. Others are made of words that come straight from the heart.',
-    asset: '/assets/heartfelt-message.jpg',
+    asset: getAssetUrl('assets/heartfelt-message.jpg'),
     alt: 'Heartfelt handwritten birthday letter for Elza',
     aspectRatio: '928 / 1152',
     lightboxTitle: 'Heartfelt Birthday Letter',
@@ -107,7 +111,7 @@ export const GIFT_DEFINITIONS = [
       subtitle: 'Part I • A Dash of Birthday Chaos',
       title: 'Birthday Meme',
       message: 'Even the most elegant swan princess has a silly side. No birthday is complete without a little chaos!',
-      asset: '/assets/birthday-meme.jpg',
+      asset: getAssetUrl('assets/birthday-meme.jpg'),
       alt: 'Playful Swan Princess Birthday Meme for Elza',
       aspectRatio: '928 / 1152',
       lightboxTitle: 'Birthday Meme',
@@ -118,7 +122,7 @@ export const GIFT_DEFINITIONS = [
       subtitle: 'Part II • Officially Crowned',
       title: 'Friendship Certificate',
       message: 'Officially certified: one wonderful human, an unforgettable friendship, and a lifetime supply of magical memories.',
-      asset: '/assets/friendship-certificate.jpg',
+      asset: getAssetUrl('assets/friendship-certificate.jpg'),
       alt: 'Official Friendship Certificate for Elza',
       aspectRatio: '1200 / 896',
       lightboxTitle: 'Friendship Certificate',

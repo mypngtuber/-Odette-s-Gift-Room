@@ -113,7 +113,16 @@ export function parseVideoLinksText(rawText) {
  * Fetch video-links.txt from public root, falling back to assets folder or default text
  */
 export async function loadVideoLinks() {
-  const tryPaths = ['/video-links.txt', '/assets/video-links.txt'];
+  const base = import.meta.env.BASE_URL || './';
+  const cleanBase = base.endsWith('/') ? base : base + '/';
+  const tryPaths = [
+    `${cleanBase}video-links.txt`,
+    `${cleanBase}assets/video-links.txt`,
+    '/video-links.txt',
+    '/assets/video-links.txt',
+    'video-links.txt',
+    'assets/video-links.txt'
+  ];
 
   for (const path of tryPaths) {
     try {
