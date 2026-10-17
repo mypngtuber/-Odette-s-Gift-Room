@@ -4,6 +4,21 @@ A personalized, interactive digital birthday surprise for Elza, inspired by Odet
 
 ---
 
+## 🌐 Live Website
+
+The live site is published on GitHub Pages:
+
+👉 **[https://mypngtuber.github.io/-Odette-s-Gift-Room/](https://mypngtuber.github.io/-Odette-s-Gift-Room/)**
+
+### To enable GitHub Pages in the repository:
+1. Go to **[Repository Settings → Pages](https://github.com/mypngtuber/-Odette-s-Gift-Room/settings/pages)**.
+2. Under **Build and deployment > Source**, select:
+   * **Deploy from a branch**
+   * Branch: **`gh-pages`**, Folder: **`/ (root)`**
+   * Click **Save** (or choose **GitHub Actions** to deploy automatically via the included workflow).
+
+---
+
 ## ✨ Features
 
 - **Magical Opening Prologue**: Atmospheric opening screen with floating snowflakes, twinkling stars, and a call-to-action button to enter the gift room.
